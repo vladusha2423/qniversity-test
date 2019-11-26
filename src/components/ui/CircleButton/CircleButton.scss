@@ -1,0 +1,29 @@
+div{
+  width: 37px;
+  height: 37px;
+  border: 2px solid $color_silver;
+  border-radius: 50%;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: $color_silver;
+  margin-left: 22px;
+  @media(max-width: 480px){
+    &{
+      margin-left: 7px;
+      width: 30px;
+      height: 30px;
+    }
+  }
+  &.primary {
+    border: 2px solid $color_primary;
+    color: black;
+  }
+  &.success {
+    border: 2px solid $color_success;
+  }
+  &.silver {
+    border: 2px solid $color_silver;
+  }
+}

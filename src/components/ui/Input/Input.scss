@@ -1,0 +1,150 @@
+.input-block {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input {
+  transition: all 0.2s ease-out;
+  width: 100%;
+  min-height: 50px;
+  padding: 13px 19px;
+  border: 1px solid #f9f9f9;
+  background-color: #f9f9f9;
+  resize: none;
+  outline: none;
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 400;
+  color: #000;
+  box-sizing: border-box;
+
+  &.no-margin {
+    margin: 0;
+  }
+
+  &.multiline {
+
+    resize: vertical;
+    line-height: 18px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #f5f5f5;
+  }
+  
+  &:focus {
+    border-color: #444;
+    background-color: #fff;
+  }
+  
+  &:focus ~ label {
+    transform: translate(0, -21px);
+    background-color: #fff;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  &.active {
+    background-color: #fff;
+    border-color: #e0e0e0;
+    font-size: 16px;
+
+    &:focus {
+      border-color: #444;
+    }
+  }
+  
+  &.disabled {
+    &:hover,
+    &:focus {
+      background-color: #f9f9f9;
+    }
+    
+    &.active {
+      background-color: #fff;
+      border-color: #e0e0e0;
+    }
+  }
+  
+  &.disabled + .label {
+    cursor: default;
+  }
+
+  &.success,
+  &.success:hover,
+  &.success:focus {
+    border-color: #6ece61;
+  }
+
+  &.hasError,
+  &.hasError:hover,
+  &.hasError:focus {
+    border-color: #eb5757;
+  }
+}
+
+.label {
+  transition: all 0.2s ease-out;
+  position: absolute;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  top: 34px;
+  left: 14px;
+  max-width: calc(100% - 19px);
+  padding: 0 5px;
+  color: #999999;
+  cursor: text;
+  
+  @media (min-width: 480px) {
+    font-size: 16px;
+    line-height: 23px;
+  }
+  
+  @media (min-width: 1024px) {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  &.active {
+    transform: translate(0, -21px);
+    background-color: #fff;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+.error {
+  position: absolute;
+  display: block;
+  min-width: 187px;
+  padding: 8px 17px;
+  background-color: rgba(235, 87, 87, 0.8);
+  color: #fff;
+  font-size: 12px;
+  border-radius: 2px;
+  top: -20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  box-sizing: border-box;
+  text-align: center;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 4.5px 2.68px 0 2.68px;
+    border-color: rgba(235, 87, 87, 0.8);
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+  }
+}

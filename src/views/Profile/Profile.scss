@@ -1,0 +1,95 @@
+.profileCard {
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1);
+
+  @media (min-width: 480px) {
+    padding: 20px;
+  }
+
+  @media (min-width: 480px) {
+    padding: 30px;
+  }
+
+  @media (min-width: 768px) {
+    padding: 40px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 50px;
+  }
+}
+
+.profileTitle {
+  padding-top: 2px;
+  margin-bottom: 16px;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+
+  @media (min-width: 768px) {
+    margin-bottom: 26px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 46px;
+  }
+}
+
+.profileInput:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.profileWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    align-items: baseline;
+    flex-direction: row;
+  }
+}
+
+.saveButton {
+  min-width: 200px;
+  font-size: 14px;
+  line-height: 14px;
+  margin-top: 10px;
+}
+
+.profileMessage {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 11px;
+  margin-top: 10px;
+  margin-bottom: -20px;
+  color: #6ece61;
+  opacity: 1;
+  transition: opacity 1s ease 0s;
+
+  @media (min-width: 768px) {
+    margin-left: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.profileError {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 11px;
+  margin-top: 10px;
+  margin-bottom: -20px;
+  color: #eb5757;
+  opacity: 1;
+  transition: opacity 1s ease 0s;
+
+  @media (min-width: 768px) {
+    margin-left: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

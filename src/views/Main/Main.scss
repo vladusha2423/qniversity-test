@@ -1,0 +1,81 @@
+.main {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.mainWrapper {
+  @media (min-width: 1170px) {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.pageLoader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(24, 24, 24, 0.2);
+  z-index: 10;
+}
+
+//.logoWrapper {
+//  position: fixed;
+//  top: 20px;
+//  padding-left: 5px;
+//  padding-right: 5px;
+//
+//  @media (min-width: 480px) {
+//    top: 30px;
+//    padding-left: 15px;
+//    padding-right: 15px;
+//  }
+//
+//  @media (min-width: 768px) {
+//    top: 40px;
+//    padding-left: 25px;
+//    padding-right: 25px;
+//  }
+//
+//  @media (min-width: 1024px) {
+//    top: 50px;
+//    padding-left: 35px;
+//    padding-right: 35px;
+//  }
+//}
+
+.contentWrapper {
+  padding-top: 20px;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 75px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  
+  @media (min-width: 480px) {
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 140px;
+  }
+  
+  @media(min-width: 768px) {
+    padding-top: 50px;
+    padding-left: 60px;
+    padding-right: 160px;
+  }
+  
+  @media(min-width: 1024px) {
+    padding-top: 50px;
+    padding-left: 80px;
+    padding-right: 170px;
+  }
+  
+  @media(min-width: 1170px) {
+    padding-left: 0;
+    padding-right: 65px;
+    max-width: 890px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

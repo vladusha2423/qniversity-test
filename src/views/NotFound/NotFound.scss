@@ -1,0 +1,115 @@
+.notFound {
+  @media (min-width: 1170px) {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.logoWrapper {
+  position: fixed;
+  top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  
+  @media (min-width: 480px) {
+    top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  @media (min-width: 1024px) {
+    top: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.notFoundWrapper {
+  padding-top: 45px;
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  
+  @media (min-width: 480px) {
+    padding-top: 55px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  
+  @media(min-width: 768px) {
+    padding-top: 80px;
+    padding-left: 105px;
+    padding-right: 105px;
+  }
+  
+  @media(min-width: 1024px) {
+    padding-top: 108px;
+    padding-left: 140px;
+    padding-right: 140px;
+  }
+  
+  @media(min-width: 1170px) {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 890px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.title {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 15px;
+  
+  @media (min-width: 480px) {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  
+  @media (min-width: 768px) {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  
+  @media (min-width: 1024px) {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+.subtitle {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  margin-bottom: 46px;
+  
+  @media (min-width: 768px) {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+
+.backButton {
+  width: 200px;
+  font-size: 12px;
+  line-height: 12px;
+  padding: 12px 10px;
+  
+  @media (min-width: 768px) {
+    padding: 16px 10px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+}

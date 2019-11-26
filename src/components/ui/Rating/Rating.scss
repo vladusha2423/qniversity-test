@@ -1,0 +1,17 @@
+.rating {
+  position: relative;
+
+  .star {
+    margin-right: 0.5rem;
+  }
+
+  .disable {
+    cursor: default;
+  }
+
+  & .star:last-child {
+    margin-right: 0;
+  }
+
+
+}

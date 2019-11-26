@@ -1,0 +1,53 @@
+//Невидимый элемент
+.invisible {
+  visibility: hidden;
+}
+
+//Затемнение на фоне
+.fade {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+//Доступно только для читалок
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+//Адаптивные переносы
+.break {
+  display: none;
+
+  &--mobile {
+    @media (min-width: $mobile) and (max-width: $tablet - 1) {
+      display: block;
+    }
+  }
+  &--tablet {
+    @media (min-width: $tablet) and (max-width: $desktop - 1) {
+      display: block;
+    }
+  }
+  &--desktop {
+    @media (min-width: $desktop) {
+      display: block;
+    }
+  }
+}

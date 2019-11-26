@@ -1,0 +1,170 @@
+.menuWrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.nav {
+  position: fixed;
+  width: calc(100% - 100px);
+  left: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 1px solid #F2F2F2;
+  margin-bottom: 20px;
+  
+  @media (min-width: 480px) {
+    width: calc(100% - 150px);
+    left: 40px;
+  }
+  
+  @media (min-width: 768px) {
+    width: calc(100% - 210px);
+    left: 80px;
+  }
+  
+  @media (min-width: 1024px) {
+    width: calc(100% - 310px);
+    left: 140px;
+  }
+  
+  .nav-link {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-shrink: 0;
+    
+    @media (min-width: 480px) {
+      font-size: 17px;
+      line-height: 20px;
+      padding-top: 14px;
+      padding-bottom: 14px;
+    }
+    
+    @media (min-width: 768px) {
+      font-size: 17px;
+      line-height: 22px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+    
+    @media (min-width: 1024px) {
+      font-size: 18px;
+      line-height: 26px;
+      padding-top: 26px;
+      padding-bottom: 26px;
+      
+      &--profile {
+        position: relative;
+        top: 5px;
+      }
+    }
+  }
+}
+
+.menu-content {
+  padding-left: 20px;
+  padding-right: 80px;
+  box-sizing: border-box;
+  margin-top: 60px;
+  
+  @media (min-width: 480px) {
+    padding-left: 40px;
+    padding-right: 110px;
+    margin-top: 80px;
+  }
+  
+  @media (min-width: 768px) {
+    padding-left: 80px;
+    padding-right: 120px;
+    margin-top: 100px;
+  }
+  
+  @media (min-width: 1024px) {
+    padding-left: 140px;
+    padding-right: 140px;
+    margin-top: 127px;
+  }
+}
+
+.moduleName {
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+.moduleTitle {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  
+  @media (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+  
+  @media (min-width: 1024px) {
+    margin-bottom: 42px;
+  }
+}
+
+.contentTitle {
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.contentWrapper {
+  display: flex;
+  margin-bottom: 15px;
+  
+  @media (min-width: 768px) {
+    margin-bottom: 20px;
+  }
+  
+  @media (min-width: 1024px) {
+    margin-bottom: 25px;
+  }
+}
+
+.chapterNumber {
+  flex-shrink: 0;
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.contentText {
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.color-lightgray {
+  color: $color_lightgray;
+  cursor: default;
+}
+
+.bold {
+  font-weight: $font_weight_bold;
+}
+
+.menu-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.sm {
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: $font_size_p2;
+}
+
+.color-success {
+  color: $color_success;
+}
+

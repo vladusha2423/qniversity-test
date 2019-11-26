@@ -1,0 +1,25 @@
+.character {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 50%;
+  background-color: #3b8de9;
+  color: #fff;
+  margin-right: 10px;
+  margin-bottom: 12px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 700;
+}

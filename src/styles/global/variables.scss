@@ -1,0 +1,111 @@
+////////// - Colors - //////////
+$color_black: #000000;
+$color_white: #ffffff;
+$color_lightsilver: #f7f7f7;
+
+
+////////// - Fonts - //////////
+
+//desktop
+$size-h1: 36px;
+$height-h1: 40px;
+
+$size-h2: 27px;
+$height-h2: 32px;
+
+$size-h3: 20px;
+$height-h3: 24px;
+
+$size-title: 17px;
+$height-title: 20px;
+
+$size-text: 15px;
+$height-text: 20px;
+
+$size-caption: 13px;
+$height-caption: 16px;
+
+$size-caption-small: 11px;
+$height-caption-small: 12px;
+
+//mobile
+$m-size-h1: 20px;
+$m-height-h1: 24px;
+
+$m-size-h2: 17px;
+$m-height-h2: 20px;
+
+$m-size-h3: 17px;
+$m-height-h3: 20px;
+
+
+////////// - Breakpoints - //////////
+
+//column 4, margin -16px, gutter - 16px;
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1200px;
+
+////////// - Resolution - //////////
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+////////// - IMPORT - //////////
+
+$layout-cols: 12;
+$layout-gutter: 2rem;
+$layout-container-width: 100%;
+$layout-wrap-width: 95rem;
+$layout-wrap-padding: 0 3rem;
+$layout-padding-top: 5rem;
+$layout-padding-bottom: 5rem;
+$layout-padding-side: 4rem;
+
+$media-s: 'only screen and (max-width: 480px)';
+$media-m: 'only screen and (max-width: 768px)';
+$media-l: 'only screen and (max-width: 1024px)';
+$media-xl: 'only screen and (max-width: 1230px)';
+
+$font_size_sm: 1.2rem;
+$font_size_p3: 1.4rem;
+$font_size_p2: 1.6rem;
+$font_size_p: 1.8rem;
+$font_size_h5: 1.8rem;
+$font_size_h4: 2.4rem;
+$font_size_h3: 2.4rem;
+$font_size_h2: 3rem;
+$font_size_h1: 3.6rem;
+
+$font_weight_light: 300;
+$font_weight_regular: 400;
+$font_weight_semibold: 600;
+$font_weight_bold: 700;
+$font_weight_black: 900;
+
+$color_primary: #3b8de9;
+$color_success: #6ece61;
+$color_error: #eb5757;
+$color_warning: #f2c94c;
+$color_gray: #444444;
+$color_lightgray: #999999;
+$color_silver: #e0e0e0;
+
+$z_scroll_btn: 500;
+$z_modal_overflow: 1000;
+$z_modal: 2000;
+
+$buttonSize: 60px;
+$btn_hover_color: #f6f6f6;
+
+//.transition() {
+//  transition: all 0.2s ease-out;
+//}
+//
+//.shadow-big($color: $color_black, $fade: 10%) {
+//  box-shadow: 1rem 1rem 4rem fade($color, $fade);
+//}
+//
+//.shadow-small($color: $color_black, $fade: 7%) {
+//  box-shadow: 0.2rem 0.2rem 0.5rem fade($color, $fade);
+//}

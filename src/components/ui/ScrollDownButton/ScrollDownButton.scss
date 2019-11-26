@@ -1,0 +1,13 @@
+.scroll-btn {
+  z-index: $z_scroll_btn;
+  top: 50%;
+  right: $layout-padding-side;
+  transform: translate(0, -50%);
+  visibility: hidden;
+  opacity: 0;
+
+  &.visible {
+    visibility: visible;
+    opacity: 1;
+  }
+}

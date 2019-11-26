@@ -1,0 +1,177 @@
+/* ELEMENTS */
+h1 {
+  font-size: $font_size_h1;
+}
+h2 {
+  font-size: $font_size_h2;
+}
+h3 {
+  font-size: $font_size_h3;
+}
+h4 {
+  font-size: $font_size_h4;
+}
+h5 {
+  font-size: $font_size_h5;
+}
+h6 {
+  font-size: $font_size_h5;
+}
+p {
+  font-size: $font_size_p;
+  line-height: 1.2;
+
+  &.sm {
+    font-size: $font_size_p2;
+  }
+
+  &.xs {
+    font-size: $font_size_p3;
+  }
+}
+small {
+  font-size: $font_size_sm;
+}
+hr {
+  margin: 2rem 0;
+}
+a {
+  text-decoration: none;
+  color: $color_primary;
+  outline: none;
+  font-size: inherit;
+  font-weight: inherit;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color_primary;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: $font_weight_regular;
+}
+
+/* HELPERS */
+.light {
+  font-weight: $font_weight_light;
+}
+.regular {
+  font-weight: $font_weight_regular;
+}
+.semibold {
+  font-weight: $font_weight_semibold;
+}
+.bold {
+  font-weight: $font_weight_bold;
+}
+.black {
+  font-weight: $font_weight_black;
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.one-line {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.color-primary {
+  color: $color_primary;
+}
+
+.color-success {
+  color: $color_success;
+}
+
+.color-error {
+  color: $color_error;
+}
+.color-warning {
+  color: $color_warning;
+}
+.color-black {
+  color: $color_black;
+}
+.color-gray {
+  color: $color_gray;
+}
+
+.color-lightgray {
+  color: $color_lightgray;
+}
+
+.color-silver {
+  color: $color_silver;
+}
+.color-white {
+  color: $color_white;
+}
+.bg-primary {
+  background-color: $color_primary;
+}
+.bg-success {
+  background-color: $color_success;
+}
+.bg-error {
+  background-color: $color_error;
+}
+.bg-warning {
+  background-color: $color_warning;
+}
+.bg-black {
+  background-color: $color_black;
+}
+.bg-gray {
+  background-color: $color_gray;
+}
+.bg-lightgray {
+  background-color: $color_lightgray;
+}
+.bg-silver {
+  background-color: $color_silver;
+}
+
+.bg-lightsilver {
+  background-color: $color_lightsilver;
+}
+
+.bg-white {
+  background-color: $color_white;
+}

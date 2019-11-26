@@ -1,0 +1,15 @@
+.star-path {
+  fill: $color_silver;
+
+  &.primary {
+    fill: $color_primary;
+  }
+
+  &.success {
+    fill: $color_success;
+  }
+
+  &.silver {
+    fill: $color_silver;
+  }
+}

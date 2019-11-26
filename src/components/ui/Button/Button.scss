@@ -1,0 +1,145 @@
+.button {
+  position: relative;
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  padding: 17px 30px 17px;
+  border-radius: 200px;
+  font-weight: bold;
+  font-size: $font_size_p3;
+  line-height: 14px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $color_silver;
+  background-color: transparent;
+  color: $color_black;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+
+  &:hover,
+  &:active,
+  &.active {
+    border-color: $color_black;
+  }
+
+  &.primary {
+    $bg: $color_primary;
+    color: $color_white;
+    background-color: $bg;
+    border-color: $bg;
+    box-shadow: 5px 5px 20px rgba(1, 133, 255, 0.2);
+
+    &:hover,
+    &:active,
+    &.active {
+      $darkened: darken($bg, 10%);
+      background-color: $darkened;
+      border-color: $darkened;
+    }
+  }
+
+  &.success {
+    $bg: $color_success;
+    color: $color_white;
+    background-color: $bg;
+    border-color: $bg;
+    
+    &:hover,
+    &:active,
+    &.active {
+      $darkened: darken($bg, 10%);
+      background-color: $darkened;
+      border-color: $darkened;
+    }
+  }
+
+  &.error {
+    $bg: $color_error;
+    color: $color_white;
+    background-color: $bg;
+    border-color: $bg;
+
+    &:hover,
+    &:active,
+    &.active {
+      $darkened: darken($bg, 10%);
+      background-color: $darkened;
+      border-color: $darkened;
+    }
+  }
+
+  &.warning {
+    $bg: $color_warning;
+    color: $color_white;
+    background-color: $bg;
+    border-color: $bg;
+
+    &:hover,
+    &:active,
+    &.active {
+      $darkened: darken($bg, 10%);
+      background-color: $darkened;
+      border-color: $darkened;
+    }
+  }
+
+  &.disabled {
+    color: $color_lightgray;
+    background-color: $color_silver;
+    border-color: $color_silver;
+    cursor: default;
+    box-shadow: none;
+
+    &:hover,
+    &:active,
+    &.active {
+      background-color: $color_silver;
+      border-color: $color_silver;
+    }
+  }
+  
+  &__loadingWrapper {
+    position: absolute;
+    top: calc(50% + 3px);
+    left: 15%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+    height: 15%;
+  }
+  
+  .button__loadingPin {
+    width: 4px;
+    height: 4px;
+    top: 0;
+    left: 0;
+    -webkit-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg);
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      background-color: #333;
+      border-radius: 50%;
+      -webkit-animation: PinFadeDelay 1.2s infinite ease-in-out both;
+      animation: PinFadeDelay 1.2s infinite ease-in-out both;
+      -webkit-animation-delay: -1.1s;
+      animation-delay: -1.1s; 
+    }
+  }
+}
+
+@-webkit-keyframes PinFadeDelay {
+  0%, 39%, 100% { opacity: 0; }
+  40% { opacity: 1; }
+}
+
+@keyframes PinFadeDelay {
+  0%, 39%, 100% { opacity: 0; }
+  40% { opacity: 1; } 
+}

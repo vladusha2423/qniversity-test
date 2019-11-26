@@ -1,0 +1,36 @@
+.button {
+  position: absolute;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  left: calc(100vw - 60px);
+  top: 10px;
+  &:hover svg{
+    fill: #666666;
+  }
+
+  @media (min-width: 768px) {
+    width: 45px;
+    height: 45px;
+    left: calc(100vw - 75px);
+  }
+
+  @media (min-width: 1024px) {
+    width: 60px;
+    height: 60px;
+    left: calc(100vw - 90px);
+  }
+}
+
+.actionIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+
+

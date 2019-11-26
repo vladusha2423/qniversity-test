@@ -1,0 +1,35 @@
+.checkbox-group {
+  position: relative;
+  margin-bottom: 32px;
+
+  .option {
+    display: block;
+    padding: 15px 20px;
+    cursor: pointer;
+    outline: none;
+    
+    &:hover,
+    &:focus {
+      background-color: #f7f7f7;
+    }
+    
+    &.checked {
+      background-color: #f7f7f7;
+    }
+    
+    &.disabled {
+      cursor: default;
+      &:hover,
+      &:focus {
+        background-color: #fff;
+      }
+    }
+    
+    &.disabled.checked {
+      &:hover,
+      &:focus {
+        background-color: #f7f7f7;
+      }
+    }
+  }
+}

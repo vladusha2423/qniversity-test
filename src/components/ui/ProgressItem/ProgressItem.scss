@@ -1,0 +1,31 @@
+.progress-container{
+  width: 100%;
+}
+.progress-item{
+  font-family: 'Ubuntu', arial, serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: black;
+  cursor: pointer;
+  padding-bottom: 5px;
+  width: 100%;
+}
+.overall{
+  border: 0;
+  border-bottom: 7px solid #fff;
+  width: 100%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.07);
+  margin: 0;
+}
+.progress{
+  border-bottom: 7px solid #2F80ED;
+  margin: 0;
+  position: relative;
+  top: -8px;
+}
