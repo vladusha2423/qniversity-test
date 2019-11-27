@@ -2,19 +2,19 @@
   font-family: Source Sans Pro, serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 24px;
   line-height: 45px;
   
   @media (min-width: 480px) {
-    font-size: 24px;
-  }
-  
-  @media (min-width: 768px) {
     font-size: 28px;
   }
   
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     font-size: 32px;
+  }
+  
+  @media (min-width: 1024px) {
+    font-size: 36px;
   }
 }
 
