@@ -1,5 +1,10 @@
 .progress-container{
   width: 100%;
+  transition: 0.3s;
+  &.hidden{
+    opacity: 0;
+
+  }
 }
 .progress-item{
   font-family: 'Ubuntu', arial, serif;
@@ -12,7 +17,6 @@
   letter-spacing: 0.5px;
   text-transform: uppercase;
   color: black;
-  cursor: pointer;
   padding-bottom: 5px;
   width: 100%;
 }
@@ -30,4 +34,5 @@
   box-shadow: 2px 2px 5px rgba(0,0,0,.07);
   border: 0;
   border-bottom: 7px solid #2f80ed;
+  transition: 0.5s;
 }

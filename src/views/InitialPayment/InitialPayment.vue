@@ -2,27 +2,26 @@
   section.initialPayment
     .paymentWrapper
       .paymentInfo
-        h1.paymentTitle Start your quest
+        h1.paymentTitle JOIN THE COURSE
         ul.paymentList
           li.paymentItem
-            p.paymentText Choose the marketing tools for your case
+            p.paymentText Choose online marketing tools for your tasks
           li.paymentItem
-            p.paymentText Apply custom marketing techniques
+            p.paymentText Apply custom techniques to acquire customers, even with $0 budget
           li.paymentItem
-            p.paymentText Understand customer psychology
+            p.paymentText Direct customer attention and understand decision making psyhology
           li.paymentItem
-            p.paymentText Acquire customers with $0 budget
+            p.paymentText Find hidden profit growth points by analyzing your activities
           li.paymentItem
-            p.paymentText Find hidden profit growth points
-          li.paymentItem
-            p.paymentText Increase percentage of repeat purchases
+            p.paymentText Increase the percentage of repeat purchases
+
       .cardContainer
         .paymentCard
           h2.cardTitle Get full access
           .cardWrapper
             .wrapper
               span.cardCurrency $
-            p.cardPrice 199
+            p.cardPrice 499
           Button.payButton(@click="openCheckout") Purchase
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="progress-container">
+  <div class="progress-container" v-bind:class="{ hidden: isHidden }">
     <div class="progress-item" v-on="$listeners">
       {{ name }}
     </div>
@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: 'MenuItem',
+  name: 'ProgressItem',
   props: {
     name: {
       type: String,
@@ -20,6 +20,11 @@ export default {
     progress: {
       type: Number,
       default: null,
+    },
+  },
+  computed: {
+    isHidden() {
+      return this.progress === 0;
     },
   },
 };

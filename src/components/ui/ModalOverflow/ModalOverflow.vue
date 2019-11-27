@@ -6,10 +6,6 @@
       icon="close"
       @click.prevent="onClose"
     )
-    ActionButton(
-        icon="close"
-        @click.prevent="onClose"
-    )
 </template>
 
 <script>

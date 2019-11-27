@@ -25,12 +25,14 @@
   
   @media (min-width: 1024px) {
     top: 50px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
   
   @media (min-width: 1170px) {
-    margin-left: 960px;
+    margin-left: 1000px;
+    padding-left: 35px;
+    padding-right: 35px;
     right: auto;
   }
 }
