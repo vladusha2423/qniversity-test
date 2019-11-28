@@ -21,7 +21,7 @@
           .cardWrapper
             .wrapper
               span.cardCurrency $
-            p.cardPrice 499
+            p.cardPrice 449
           Button.payButton(@click="openCheckout") Purchase
 </template>
 
